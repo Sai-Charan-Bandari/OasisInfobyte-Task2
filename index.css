@@ -3,18 +3,21 @@
     border-radius: 3px;
     /* text-align: center; */
     color:white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
-
+h2{
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}   
 body{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     background-image: linear-gradient(to right ,black,black,gray);
 }
 header , blockquote{
     text-align: center;
-}
-img{
-    display: block;
-    margin: auto;
 }
 h5{
     text-align: center;
@@ -27,14 +30,64 @@ h5{
 ul{
     background-color: whitesmoke;
     background-image: url("https://www.pngkey.com/png/full/74-743991_28-collection-of-bruce-lee-kicking-drawing-bruce.png");
+    background-position: center;
     background-repeat: no-repeat;
     padding: 2px;
 }
 li{
+    padding: 15px;
     margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    
+}
+li div{
     color:black;
-
+    background-image: linear-gradient(to right ,rgb(179, 209, 228),transparent   ,transparent);
+    width: 100%;
+    padding: 2px;
 }
 strong{
+    border-radius: 0;
+    padding-right: 10px;
+    border-right: 3px solid black;
     color: gray;
+    margin-right: 10px;
 }
+#page2{
+    padding-top: 5px;
+}
+/* #page1{
+    background-position: left;
+    background-repeat: no-repeat;
+} */
+#img{
+    margin: auto;
+    width: 50%;
+    height: 300px;
+    background-image: url('https://i.ibb.co/C5Cmc17/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: changeBackground 5s  ;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes changeBackground {
+    20% {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRadzbcbSUvjtLQMcPn4NPVwA98r0VYFpXffQ&usqp=CAU')
+    }
+    60%{
+        background-position: center;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl-m9pac6UkYJLTIVoWrGX0o4KLWcPZnU7PA&usqp=CAU');
+    }
+    100% {
+        background-image: url('https://i.ibb.co/C5Cmc17/hero.jpg');
+    }
+  }

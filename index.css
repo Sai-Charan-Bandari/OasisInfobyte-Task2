@@ -1,4 +1,5 @@
 *{
+    scroll-behavior: smooth;
     border-radius: 3px;
     /* text-align: center; */
     color:white;
@@ -14,4 +15,26 @@ header , blockquote{
 img{
     display: block;
     margin: auto;
+}
+h5{
+    text-align: center;
+}
+#scroll-down{
+    margin: 5px;
+    display: block;
+    text-align: right;
+}
+ul{
+    background-color: whitesmoke;
+    background-image: url("https://www.pngkey.com/png/full/74-743991_28-collection-of-bruce-lee-kicking-drawing-bruce.png");
+    background-repeat: no-repeat;
+    padding: 2px;
+}
+li{
+    margin-left: 20px;
+    color:black;
+
+}
+strong{
+    color: gray;
 }

@@ -1,0 +1,17 @@
+*{
+    border-radius: 3px;
+    /* text-align: center; */
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right ,black,black,gray);
+}
+header , blockquote{
+    text-align: center;
+}
+img{
+    display: block;
+    margin: auto;
+}
